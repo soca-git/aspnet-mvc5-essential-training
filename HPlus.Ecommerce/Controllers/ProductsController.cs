@@ -13,12 +13,5 @@ namespace HPlus.Ecommerce.Controllers
         {
             return RedirectToAction("Index", "Product");
         }
-
-        [Route("product/{productName:string?}")]
-        public ActionResult Detail(string productName = null)
-        {
-            // lookup the product name in the database
-            return View();
-        }
     }
 }

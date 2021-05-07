@@ -14,7 +14,7 @@ namespace HPlus.Ecommerce
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             // Allow routing of route/url tags.
-            // routes.MapMvcAttributeRoutes();
+            routes.MapMvcAttributeRoutes();
 
             // Default route table.
             routes.MapRoute(

@@ -9,7 +9,8 @@ namespace HPlus.Ecommerce
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new LogRequestFilter());
-            filters.Add(new HandleErrorAttribute());
+            // filters.Add(new HandleErrorAttribute()); default error handler.
+            filters.Add(new CustomExceptionHandler());
         }
     }
 }
