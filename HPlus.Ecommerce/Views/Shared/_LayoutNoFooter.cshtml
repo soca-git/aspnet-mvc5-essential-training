@@ -1,13 +1,18 @@
-﻿<!DOCTYPE html>
+﻿
+@helper IconBars(int count)
+{
+    for (int i = 0; i < count; i++)
+    {
+        <span class="icon-bar"></span>
+    }
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-
-    <!--
-        Bundling & rendering static files here!    
-    -->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,23 +22,11 @@
 <body>
     @Html.Partial("~/Views/Shared/_NavBar.cshtml")
     <div class="container body-content">
-        <!-- Rendering/injecting of view content here! -->
         @RenderBody()
-        <hr />
-        <footer>
-            <!--<p>&copy; H+ Sport @DateTime.Now.Year</p>-->
-            <p>@Html.Copyright() |
-            <a href="https://twitter.com/hplussport" target="_blank">@@HPlusSport</a>
-            </p>
-        </footer>
     </div>
 
-    <!-- More JS bundling & rendering. -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-
-    <!-- Allows injection of scripts from the view pages. -->
-    <!-- This can be done by using "@@section scripts". -->
     @RenderSection("scripts", required: false)
 </body>
 </html>
