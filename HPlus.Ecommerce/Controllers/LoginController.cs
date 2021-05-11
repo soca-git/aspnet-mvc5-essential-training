@@ -19,6 +19,14 @@ namespace HPlus.Ecommerce.Controllers
         [HttpPost]
         public ActionResult Index(Login request)
         {
+            // By calling the IsValid method of the ModelState (which is a property of Controller),
+            // All of the default validations and any data annotations specified are verified.
+            if (!ModelState.IsValid)
+            {
+                // If the login information fails the validations, return the login view.
+                return View(request);
+            }
+
             Debug.WriteLine(request.Username + " " + request.Password);
             if (!string.IsNullOrEmpty(request.Username) && !string.IsNullOrEmpty(request.Password))
             {

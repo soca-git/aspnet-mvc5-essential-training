@@ -74,4 +74,7 @@ C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\roslyn\System.S
 C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\roslyn\System.Security.Claims.dll
 C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\roslyn\System.Security.Principal.Windows.dll
 C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\Newtonsoft.Json.xml
-C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\obj\Debug\HPlus.Ecommerce.csprojAssemblyReference.cache
+C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\EntityFramework.dll
+C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\EntityFramework.SqlServer.dll
+C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\EntityFramework.xml
+C:\Users\mintee\source\repos\HPlus.Ecommerce\HPlus.Ecommerce\bin\EntityFramework.SqlServer.xml
